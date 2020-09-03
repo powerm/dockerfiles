@@ -1,0 +1,379 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="https://athackst.github.io/dockerfiles/" rel="canonical"/>
+<link href="assets/images/favicon.png" rel="shortcut icon"/>
+<meta content="mkdocs-1.1.2, mkdocs-material-5.5.12" name="generator"/>
+<title>dockerfiles</title>
+<link href="assets/stylesheets/main.4dd2dd8d.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
+<style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+</head>
+<body dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#athackstdockerfiles">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header-nav md-grid">
+<a aria-label="dockerfiles" class="md-header-nav__button md-logo" href="https://athackst.github.io/dockerfiles" title="dockerfiles">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"></path></svg>
+</a>
+<label class="md-header-nav__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
+</label>
+<div class="md-header-nav__title" data-md-component="header-title">
+<div class="md-header-nav__ellipsis">
+<span class="md-header-nav__topic md-ellipsis">
+            dockerfiles
+          </span>
+<span class="md-header-nav__topic md-ellipsis">
+            
+              athackst/dockerfiles
+            
+          </span>
+</div>
+</div>
+<label class="md-header-nav__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" data-md-state="active" name="query" placeholder="Search" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+</label>
+<button aria-label="Clear" class="md-search__icon md-icon" data-md-component="search-reset" tabindex="-1" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path></svg>
+</button>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="dockerfiles" class="md-nav__button md-logo" href="https://athackst.github.io/dockerfiles" title="dockerfiles">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"></path></svg>
+</a>
+    dockerfiles
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+        athackst/dockerfiles
+        <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="." title="athackst/dockerfiles">
+      athackst/dockerfiles
+    </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#quick-start">
+    Quick start
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#build-the-dockerfiles">
+    Build the dockerfiles
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#quick-start">
+    Quick start
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#build-the-dockerfiles">
+    Build the dockerfiles
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content">
+<article class="md-content__inner md-typeset">
+<h1 id="athackstdockerfiles">athackst/dockerfiles</h1>
+<p>These are multi-stage docker images I use for developing with <a href="https://code.visualstudio.com/">VSCode</a>.</p>
+<p>See <a href="https://www.allisonthackston.com/articles/docker_development.html">how I develop with vscode and docker</a>.</p>
+<p>Instructions on how to duplicate my IDE:</p>
+<ul>
+<li><a href="https://www.allisonthackston.com/articles/vscode_docker_ros2.html">vscode, docker, and ros2</a></li>
+<li><a href="https://www.allisonthackston.com/articles/vscode_docker_ros2.html">vscode, docker, and github pages</a></li>
+</ul>
+<h2 id="quick-start">Quick start</h2>
+<p>Grab the docker image from <a href="https://hub.docker.com/u/athackst">docker hub</a></p>
+<ul>
+<li><a href="https://hub.docker.com/r/athackst/ros">athackst/ros</a></li>
+<li><a href="https://hub.docker.com/r/athackst/ros2">athackst/ros2</a></li>
+<li><a href="https://hub.docker.com/r/athackst/gazebo">athackst/gazebo</a></li>
+<li><a href="https://hub.docker.com/r/athackst/ignition">atahckst/igntion</a></li>
+<li><a href="https://hub.docker.com/r/athackst/github">athackst/github</a></li>
+</ul>
+<p>Set up a <a href="https://github.com/athackst/vscode_ros2_workspace">vscode workspace</a></p>
+<h2 id="build-the-dockerfiles">Build the dockerfiles</h2>
+<p>Create the docker images</p>
+<pre><code class="bash">./build.py all
+</code></pre>
+<p>To see help information on the update script</p>
+<pre><code class="bash">./build.py --help
+</code></pre>
+<hr/>
+<h1 id="reference">Reference</h1>
+<h3 id="generatepy">generate.py</h3>
+<div class="doc doc-object doc-function">
+<h2 class="hidden-toc" href="#generate.templates" id="generate.templates" style="visibility: hidden; width: 0; height: 0;">
+</h2>
+<div class="doc doc-contents first">
+<p>Dictionary of dockerfile templates and settings.</p>
+<details class="quote">
+<summary>Source code in <code>workspace/generate.py</code></summary>
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">templates</span><span class="p">():</span>
+    <span class="sd">"""Dictionary of dockerfile templates and settings."""</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s1">'ros2'</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'foxy'</span><span class="p">,</span>
+                <span class="s1">'ubuntu_distro'</span><span class="p">:</span> <span class="s1">'20.04'</span><span class="p">,</span>
+                <span class="s1">'ros_distro'</span><span class="p">:</span> <span class="s1">'foxy'</span><span class="p">,</span>
+                <span class="s1">'python_version'</span><span class="p">:</span> <span class="s1">'3.8'</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'eloquent'</span><span class="p">,</span>
+                <span class="s1">'ubuntu_distro'</span><span class="p">:</span> <span class="s1">'18.04'</span><span class="p">,</span>
+                <span class="s1">'ros_distro'</span><span class="p">:</span> <span class="s1">'eloquent'</span><span class="p">,</span>
+                <span class="s1">'python_version'</span><span class="p">:</span> <span class="s1">'3.6'</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'dashing'</span><span class="p">,</span>
+                <span class="s1">'ubuntu_distro'</span><span class="p">:</span> <span class="s1">'18.04'</span><span class="p">,</span>
+                <span class="s1">'ros_distro'</span><span class="p">:</span> <span class="s1">'dashing'</span><span class="p">,</span>
+                <span class="s1">'python_version'</span><span class="p">:</span> <span class="s1">'3.6'</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'crystal'</span><span class="p">,</span>
+                <span class="s1">'ubuntu_distro'</span><span class="p">:</span> <span class="s1">'16.04'</span><span class="p">,</span>
+                <span class="s1">'ros_distro'</span><span class="p">:</span> <span class="s1">'crystal'</span><span class="p">,</span>
+                <span class="s1">'python_version'</span><span class="p">:</span> <span class="s1">'3.6'</span>
+            <span class="p">},</span>
+        <span class="p">],</span>
+        <span class="s1">'ros'</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'noetic'</span><span class="p">,</span>
+                <span class="s1">'ubuntu_distro'</span><span class="p">:</span> <span class="s1">'20.04'</span><span class="p">,</span>
+                <span class="s1">'ros_distro'</span><span class="p">:</span> <span class="s1">'noetic'</span><span class="p">,</span>
+                <span class="s1">'python_version'</span><span class="p">:</span> <span class="s1">'3'</span><span class="p">,</span>
+                <span class="s1">'python_env'</span><span class="p">:</span> <span class="s1">'3'</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'melodic'</span><span class="p">,</span>
+                <span class="s1">'ubuntu_distro'</span><span class="p">:</span> <span class="s1">'18.04'</span><span class="p">,</span>
+                <span class="s1">'ros_distro'</span><span class="p">:</span> <span class="s1">'melodic'</span><span class="p">,</span>
+                <span class="s1">'python_version'</span><span class="p">:</span> <span class="s1">'2.7'</span><span class="p">,</span>
+                <span class="s1">'python_env'</span><span class="p">:</span> <span class="s1">''</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'kinetic'</span><span class="p">,</span>
+                <span class="s1">'ubuntu_distro'</span><span class="p">:</span> <span class="s1">'16.04'</span><span class="p">,</span>
+                <span class="s1">'ros_distro'</span><span class="p">:</span> <span class="s1">'kinetic'</span><span class="p">,</span>
+                <span class="s1">'python_version'</span><span class="p">:</span> <span class="s1">'2.7'</span><span class="p">,</span>
+                <span class="s1">'python_env'</span><span class="p">:</span> <span class="s1">''</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="s1">'ignition'</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'citadel'</span><span class="p">,</span>
+                <span class="s1">'ubuntu_distro'</span><span class="p">:</span> <span class="s1">'18.04'</span><span class="p">,</span>
+                <span class="s1">'ign_distro'</span><span class="p">:</span> <span class="s1">'citadel'</span><span class="p">,</span>
+                <span class="s1">'gazebo_version'</span><span class="p">:</span> <span class="s1">'3'</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'blueprint'</span><span class="p">,</span>
+                <span class="s1">'ubuntu_distro'</span><span class="p">:</span> <span class="s1">'18.04'</span><span class="p">,</span>
+                <span class="s1">'ign_distro'</span><span class="p">:</span> <span class="s1">'blueprint'</span><span class="p">,</span>
+                <span class="s1">'gazebo_version'</span><span class="p">:</span> <span class="s1">'2'</span>
+            <span class="p">},</span>
+        <span class="p">],</span>
+        <span class="s1">'gazebo'</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'gazebo11'</span><span class="p">,</span>
+                <span class="s1">'ubuntu_distro'</span><span class="p">:</span> <span class="s1">'20.04'</span><span class="p">,</span>
+                <span class="s1">'gazebo_release'</span><span class="p">:</span> <span class="s1">'11'</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'gazebo10'</span><span class="p">,</span>
+                <span class="s1">'ubuntu_distro'</span><span class="p">:</span> <span class="s1">'18.04'</span><span class="p">,</span>
+                <span class="s1">'gazebo_release'</span><span class="p">:</span> <span class="s1">'10'</span>
+            <span class="p">},</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<h3 id="buildpy">build.py</h3>
+<div class="doc doc-object doc-function">
+<h2 class="hidden-toc" href="#build.targets" id="build.targets" style="visibility: hidden; width: 0; height: 0;">
+</h2>
+<div class="doc doc-contents first">
+<p>List of default targets for the dockerfiles.</p>
+<details class="quote">
+<summary>Source code in <code>workspace/build.py</code></summary>
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">targets</span><span class="p">():</span>
+    <span class="sd">"""List of default targets for the dockerfiles."""</span>
+    <span class="k">return</span> <span class="p">[</span><span class="s2">"base"</span><span class="p">,</span> <span class="s2">"dev"</span><span class="p">,</span> <span class="s2">"full"</span><span class="p">,</span> <span class="s2">"gazebo"</span><span class="p">]</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h2 class="hidden-toc" href="#build.images" id="build.images" style="visibility: hidden; width: 0; height: 0;">
+</h2>
+<div class="doc doc-contents first">
+<p>List of images and build settings.</p>
+<details class="quote">
+<summary>Source code in <code>workspace/build.py</code></summary>
+<div class="highlight">
+<pre><span></span><code><span class="k">def</span> <span class="nf">images</span><span class="p">():</span>
+    <span class="sd">"""List of images and build settings."""</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s2">"kinetic"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">"repository"</span><span class="p">:</span> <span class="s2">"ros"</span><span class="p">,</span>
+            <span class="s2">"targets"</span><span class="p">:</span> <span class="n">targets</span><span class="p">()</span>
+        <span class="p">},</span>
+        <span class="s2">"melodic"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">"repository"</span><span class="p">:</span> <span class="s2">"ros"</span><span class="p">,</span>
+            <span class="s2">"targets"</span><span class="p">:</span> <span class="n">targets</span><span class="p">()</span>
+        <span class="p">},</span>
+        <span class="s2">"noetic"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">"repository"</span><span class="p">:</span> <span class="s2">"ros"</span><span class="p">,</span>
+            <span class="s2">"targets"</span><span class="p">:</span> <span class="n">targets</span><span class="p">()</span>
+        <span class="p">},</span>
+        <span class="s2">"dashing"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">"repository"</span><span class="p">:</span> <span class="s2">"ros2"</span><span class="p">,</span>
+            <span class="s2">"targets"</span><span class="p">:</span> <span class="n">targets</span><span class="p">()</span>
+        <span class="p">},</span>
+        <span class="s2">"eloquent"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">"repository"</span><span class="p">:</span> <span class="s2">"ros2"</span><span class="p">,</span>
+            <span class="s2">"targets"</span><span class="p">:</span> <span class="n">targets</span><span class="p">()</span>
+        <span class="p">},</span>
+        <span class="s2">"foxy"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">"repository"</span><span class="p">:</span> <span class="s2">"ros2"</span><span class="p">,</span>
+            <span class="s2">"targets"</span><span class="p">:</span> <span class="n">targets</span><span class="p">()</span>
+        <span class="p">},</span>
+        <span class="s2">"gazebo10"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">"repository"</span><span class="p">:</span> <span class="s2">"gazebo"</span><span class="p">,</span>
+            <span class="s2">"targets"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"base"</span><span class="p">,</span> <span class="s2">"dev"</span><span class="p">]</span>
+        <span class="p">},</span>
+        <span class="s2">"gazebo11"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">"repository"</span><span class="p">:</span> <span class="s2">"gazebo"</span><span class="p">,</span>
+            <span class="s2">"targets"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"base"</span><span class="p">,</span> <span class="s2">"dev"</span><span class="p">]</span>
+        <span class="p">},</span>
+        <span class="s2">"blueprint"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">"repository"</span><span class="p">:</span> <span class="s2">"ignition"</span><span class="p">,</span>
+            <span class="s2">"targets"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"base"</span><span class="p">,</span> <span class="s2">"dev"</span><span class="p">]</span>
+        <span class="p">},</span>
+        <span class="s2">"citadel"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">"repository"</span><span class="p">:</span> <span class="s2">"ignition"</span><span class="p">,</span>
+            <span class="s2">"targets"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"base"</span><span class="p">,</span> <span class="s2">"dev"</span><span class="p">]</span>
+        <span class="p">},</span>
+        <span class="s2">"pages"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">"repository"</span><span class="p">:</span> <span class="s2">"github"</span><span class="p">,</span>
+            <span class="s2">"targets"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"dev"</span><span class="p">]</span>
+        <span class="p">},</span>
+    <span class="p">}</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+          Material for MkDocs
+        </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<script src="assets/javascripts/vendor.3636a4ec.min.js"></script>
+<script src="assets/javascripts/bundle.e9fe3281.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+<script>
+        app = initialize({
+          base: ".",
+          features: [],
+          search: Object.assign({
+            worker: "assets/javascripts/worker/search.5eca75d3.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+</body>
+</html>
