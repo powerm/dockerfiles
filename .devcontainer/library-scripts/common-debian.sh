@@ -9,9 +9,9 @@
 # Syntax: ./common-debian.sh [install zsh flag] [username] [user UID] [user GID] [upgrade packages flag] [install Oh My *! flag]
 
 INSTALL_ZSH=${1:-"true"}
-USERNAME=${2:-"automatic"}
-USER_UID=${3:-"automatic"}
-USER_GID=${4:-"automatic"}
+USERNAME=${2:-"whl"}
+USER_UID=${3:-"whl"}
+USER_GID=${4:-"whl"}
 UPGRADE_PACKAGES=${5:-"true"}
 INSTALL_OH_MYS=${6:-"true"}
 
